@@ -1,0 +1,34 @@
+<meta>
+	<info author="Meta Scripts -Beyonder" type="script" name="[meta-bank]" version="0.1.0" />
+	<!--Settings-->
+	<script src="settings/settings.lua" type="shared" />
+
+	<script src="panel/client/main_panel.lua" type="client" />
+	<script src="panel/client/util_c.lua" type="client" />
+	<script src="panel/server/util_s.lua" type="server" />
+		<file src="panel/panel_img/home.png" />
+		<file src="panel/panel_img/plus.png" />
+		<file src="panel/panel_img/negative.png" />
+		<file src="panel/panel_img/send.png" />
+		<file src="panel/panel_img/cripto.png" />
+		<file src="panel/panel_img/exit.png" />
+		<file src="panel/panel_img/roboto.ttf" />
+		<file src="panel/panel_img/server_logo.png" />
+	<!--Markers-->
+	<script src="markers/marker_c.lua" type="client" />
+	<script src="markers/marker_s.lua" type="server" />
+
+	<!--databes-->
+	<script src="database/db.lua" type="server" />
+
+	<!-- Exports    -->
+    <script src="exports/exports_s.lua" type="server" cache="false"/>
+    <script src="exports/exports_c.lua" type="client" cache="false"/>
+		<export function="give_balance" type="server"/>
+		<export function="get_balance" type="server"/>
+		<export function="give_balance" type="client"/>
+		<export function="get_balance" type="client"/>
+	<!--map-->
+	<script src="map/map_s.lua" type="server" />
+       
+</meta>
